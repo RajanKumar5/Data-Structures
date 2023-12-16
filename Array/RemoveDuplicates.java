@@ -8,7 +8,7 @@ public class RemoveDuplicates {
         int n = sc.nextInt();
         int arr[] = new int[n];
 
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
@@ -19,10 +19,10 @@ public class RemoveDuplicates {
         sc.close();
     }
 
-    static int removeDeuplcates(int n, int arr[]){
+    static int removeDeuplcates(int n, int arr[]) {
         int i = 0;
-        for(int j = 1; j < n; j++){
-            if(arr[i] != arr[j]){
+        for (int j = 1; j < n; j++) {
+            if (arr[i] != arr[j]) {
                 i++;
                 arr[i] = arr[j];
             }
